@@ -3,6 +3,8 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
+import Calculator from "./components/Calculator";
+
 
 class App extends Component {
   // https://www.w3schools.com/react/react_state.asp
@@ -26,13 +28,14 @@ class App extends Component {
           <button onClick={() => this.onPageClick("projects")}>Projects</button>
           <button onClick={() => this.onPageClick("about")}>About me</button>
           <button onClick={() => this.onPageClick("contact")}>Contact me</button>
-
+          <button onClick={() => this.onPageClick("calculator")}>Calculator</button>
         </nav>
         <div className="page">
           {this.state.currentPage === "home" ? <Home/> : null}
           {this.state.currentPage === "projects" ? (<Projects/>) : null}
           {this.state.currentPage === "about" ? (<AboutMe description={this.aboutMeDescription}/>) : null}
           {this.state.currentPage === "contact" ? (<Contact/>) : null}
+          {this.state.currentPage === "calculator" ? (<Calculator/>) : null}
 
         </div>
       </>
@@ -44,7 +47,7 @@ export default App;
 
 
 /// practice some more state:
-///Change counter to class component and call it calculator
+///Change counter to class component not a function and call it calculator
 // 2 input fields that you type in the number and has 4 buttons (+,-,*,/). the buttons shoould say multpily, substract and etc
 // when you enter numbers in the field and click one of the buttons it should perform calclutating operations and display the total at the bottom.
 

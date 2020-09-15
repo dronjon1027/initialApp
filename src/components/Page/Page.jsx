@@ -3,7 +3,7 @@ import Counter from "../Counter";
 import AboutMe from "../AboutMe";
 export default class Page extends Component {
   state = {
-    count: 10,
+    count: 0,
   };
 
   handleCountChange = (newCount) => {

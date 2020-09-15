@@ -1,4 +1,4 @@
-import React, {Component} from "./node_modules/react";
+import React, {Component} from 'react';
 
 export default class AboutMe extends Component {
   render() {
